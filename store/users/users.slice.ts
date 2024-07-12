@@ -19,7 +19,7 @@ const usersSlice = createSlice({
 });
 
 // actions
-export const { setUser, clearUser } = usersSlice.actions;
+export const { setUser, resetUser } = usersSlice.actions;
 
 // Selectors
 const selectUsersState = (state: RootState) => state.users;
