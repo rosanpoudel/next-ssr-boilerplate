@@ -12,7 +12,7 @@ const usersSlice = createSlice({
     setUser: (state, action) => {
       state.users = action.payload;
     },
-    clearUser: (state) => {
+    resetUser: (state) => {
       state.users = [];
     },
   },
