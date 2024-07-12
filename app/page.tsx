@@ -9,7 +9,7 @@ export default function Home() {
   const dispatch = useDispatch();
 
   const users: any = useSelector(selectUsers);
-  const { data, isLoading } = useGetPostsQuery({});
+  const { data } = useGetPostsQuery({});
 
   const handleButtonClick = () => {
     dispatch(setUser([...users, { name: "Roshan Poudel" }]));
@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="flex h-screen items-center justify-center bg-primary">
       <ConnectionStatus />
-      <div className="mx-auto h-[80vh] overflow-auto text-indigo-500">
+      <div className=" h-[80vh] overflow-auto text-indigo-500">
         {data &&
           data.map((post: any, i: number) => (
             <div key={i}>
