@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="flex h-screen items-center justify-center bg-primary">
       <ConnectionStatus />
-      <div className="h-[80vh] overflow-auto text-indigo-500">
+      <div className="mx-auto h-[80vh] overflow-auto text-indigo-500">
         {data &&
           data.map((post: any, i: number) => (
             <div key={i}>
