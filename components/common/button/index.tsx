@@ -30,6 +30,7 @@ const Button = ({
   padding = "",
   ...customStyles // Spread operator to capture any additional custom styles
 }: ButtonTypes) => {
+  const data = "123";
   const baseClasses =
     "rounded focus:outline-none hover:shadow-xl transition duration-300 ease-in-out";
   let variantClasses = "";
