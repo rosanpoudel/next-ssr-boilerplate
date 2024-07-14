@@ -1,4 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+echo "Staged files:"
+git diff --cached --name-only
+
 npx lint-staged
