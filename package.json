@@ -43,8 +43,7 @@
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx,json,mjs,cjs}": [
       "node log-changed-files.js",
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   }
 }
