@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-
 export interface ButtonTypes {
   children: React.ReactNode | string;
   onClick: () => void;
