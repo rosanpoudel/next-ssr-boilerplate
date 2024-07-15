@@ -41,10 +41,16 @@
     "typescript": "^5.1.3"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx,json,mjs,cjs}": [
+    "**/*.{js,jsx,ts,tsx,json,mjs,cjs,css,scss}": [
       "node log-changed-files.js",
+      "prettier --write",
       "eslint --fix",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint --edit $1"
+    }
   }
 }
