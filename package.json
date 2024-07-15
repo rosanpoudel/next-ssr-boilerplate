@@ -47,10 +47,5 @@
       "eslint --fix",
       "git add"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint --edit $1"
-    }
   }
 }
